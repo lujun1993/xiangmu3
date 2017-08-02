@@ -1,0 +1,45 @@
+.verify input{
+	box-sizing:border-box;
+	width:35%;
+	height:100%;
+	border:1px #af1515 solid;
+	padding-left:15px;
+	border-radius:5px 0px 0px 5px;
+	outline:none;
+}
+.verify input::-webkit-input-placeholder{
+	   	font-family:"黑体";
+}
+.selectpic{
+	box-sizing:border-box;
+	width:30%;
+	height:100%;
+	background:#f4d3d3;
+	border:1px #af1515 solid;
+	border-radius:0px 5px 5px 0px;
+	border-left:none;
+	display:flex;
+	align-items:center;
+}
+.verify>div:last-child{
+	width:35%;
+	height:100%;
+	text-align:center;
+	line-height:46px;
+}
+.verify p{
+	font-size:12px;
+}
+.swiper-container{
+	width:90%;
+	height:90%;
+	margin:0 auto;
+ }
+ .swiper-wrapper,.swiper-slide{
+ 	width:100%;
+	height:100%;
+ }
+ .swiper-slide>img{
+	width:100%;
+	height:100%;
+ }  

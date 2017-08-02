@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="css/item3_register.css">
+	<link rel="stylesheet" href="iconfont/demo.css">
+	 <link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	
+</head>
+<body>
+	<img src="images/login_background.jpg" alt="" id="background_login">
+	<img src="images/nav-logo.png" alt="" id="nav_logo">
+
+
+	<form id="main" action="item3_enter.html" method="post" onsubmit="return checkInput()">
+
+		<div class="user_register header">
+			<span>用户注册</span>
+		</div>
+		<!-- 手机号码部分 -->
+		<div class="information phone_number">
+			<div class="firstline">
+				<div class="left left_num">
+					<i class="icon iconfont icon-shouji"></i>
+				</div>
+				<input type="text" placeholder="手机号码" onblur="checkNumber()" id="phoneNumber">
+			</div>
+			<p>手机号码为必填项</p>
+		</div>
+		<!-- 验证码部分 -->
+		<div class="information get_verify">
+			<div class="firstline getVerify">
+				<div class="left left_ver">
+					<i class="icon iconfont icon-erweimamingpian"></i>
+				</div>
+				<input type="text" onblur="checkVerify()" id="verifyNumber">
+				<div id="showverify"></div>
+				<div onclick="getVerify()" id="verifyBtn">
+					获取验证码
+				</div>
+			</div>
+			<p>验证码为必填项</p>
+		</div>
+		<!-- 登录密码部分 -->
+		<div class="information password_setin">
+			<div class="firstline passwordSetIn">
+				<div class="left left_pass">
+					<i class="icon iconfont icon-mima"></i>
+				</div>
+				<input type="password" placeholder="登录密码" method="get" onblur="checkPassword()" id="setPassword">
+				<div class="eye">
+					<i class="icon iconfont icon-mimayincang" onclick="Seepss()"></i>
+				</div>
+			</div>
+			<p>登录密码为必填项</p>
+		</div>
+		<!-- 确认密码部分 -->
+		<div class="information reconfirm">
+			<div class="firstline passwordSetIn">
+				<div class="left left_repass">
+					<i class="icon iconfont icon-mima"></i>
+				</div>
+				<input type="password" placeholder="确认密码" onblur="checkRePassword()" id="rePassword">
+				<div class="eye">
+					<i class="icon iconfont icon-mimayincang" onclick="Seepss()"></i>
+				</div>
+			</div>
+			<p>确认密码为必填项</p>
+		</div>
+		<!-- 同意协议并提交 -->
+		<div class="information submit">
+			<input type="submit" value="同意协议并提交" id="submitBtn">
+			<div class="bottoms">
+				<p class="blue"><a href="item3_enter.html">已注册？立即登录</a></p>
+				<p>
+					<span>注册同意</span>
+					<span class="blue">《伟达金云桥使用协议》</span>
+				</p>
+			</div>
+		</div>
+	</form>
+</body>
+<script src="js/item3_register.js"></script>
+</html>

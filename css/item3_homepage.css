@@ -1,0 +1,112 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+html,body{
+	height:100%;
+	background:#222;
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+.swiper-container{
+	width:100%;
+	height:100%;
+}
+.swiper-slide{
+	width:100%;
+	height:100%;	
+	}
+
+/* 对导航栏进行设置 */
+
+.nav{
+	z-index:15;
+	position:fixed;
+	top:0%;
+	opacity:0.8;
+	width:100%;
+	height:60px;
+	background:white;
+	/* animation:shownav 0.2s linear 0.4s forwards; */
+}
+/* @keyframes shownav{
+	0%{
+		opacity:0;
+		height:0;
+	}
+	100%{
+		opacity:0.8;
+		height: 60px;
+	}
+} */
+
+.outbox{
+	margin:0 auto;
+	width:72%;
+	height:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.outbox .left{
+	width:10%;
+}
+#logo{
+	width:120px;
+	height:auto;
+}
+.outbox .middle{
+	width:48%;
+	
+}
+ul{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+ul li{
+	list-style:none;
+	color:#222;
+}
+.outbox .right{
+	width:15%;
+	text-align:left;
+	height:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+#userpic{
+	width:36px;
+	height:auto;
+}
+.enter_register{
+	color:#af1515;
+}
+.enter_register a{
+	text-decoration:none;
+	color:#af1515;
+	letter-spacing:2px;
+}
+
+/* 对轮播的页面进行设置 */
+
+.bgpic{/* 设置所有加入的图片能铺满整个页面 */
+	width:100%;
+	height:100%;
+}
+.quxian{
+	position:absolute;
+	z-index:10;
+	bottom:8%;
+	left:0%;
+}
+.table{
+	position:absolute;
+	z-index:10;
+	top:40%;
+	right:6%;
+}
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/item3_register.css">
+	<link rel="stylesheet" href="css/item3_enter.css">
+	<link rel="stylesheet" href="iconfont/demo.css">
+	 <link rel="stylesheet" href="iconfont/iconfont.css">
+	 <script src="js/swiper.min.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+</head>
+<body>
+	<img src="images/login_background.jpg" alt="" id="background_login">
+	<img src="images/nav-logo.png" alt="" id="nav_logo">
+
+
+	<form id="main" action="item3_homepage.html" method="post" onsubmit="return checkInput()">
+
+		<div class="user_enter header">
+			<span>用户登录</span>
+		</div>
+		
+		<div class="information user_name">
+			<div class="firstline">
+				<div class="left left_user">
+					<i class="icon iconfont icon-weibiaoti101"></i>
+				</div>
+				<input type="text" placeholder="用户名" onblur="checkUsername()" id="userName">
+			</div>
+			<p>用户名为必填项</p>
+		</div>
+		
+		<div class="information set_password">
+			<div class="firstline">
+				<div class="left left_pass">
+					<i class="icon iconfont icon-mima"></i>
+				</div>
+				<input type="password" placeholder="登录密码" onblur="checkPassword()" id="setPassword">
+			</div>
+			<p>密码为必填项</p>
+
+		</div>
+
+		<div class="information re_confirm">
+			<div class="firstline verify">
+				<input type="text" placeholder="验证码" onblur="checkVerify()" id="getVerify">
+				<!-- 设置验证码轮播图 -->
+				<div class="selectpic">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/4pse.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/jgmj.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/m8k2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/smwm.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/uwv6.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/3n3d.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/dwse.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/srke.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="images/tskh.jpg" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div>
+					<p id="changePic" class="blue">看不清？换图片</p>
+				</div>
+			</div>
+			<p>验证码为必填项</p>
+		</div>
+
+		<div class="information submit">
+			<input type="submit" value="登录">
+			<div class="bottoms">
+				<p class="blue"><a href="item3_register.html">用户注册</a></p>
+				<p class="blue">忘记密码</p>
+			</div>
+		</div>
+	</form>
+	<script src="js/item3_enter.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/item3_homepage.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+</head>
+<body>
+	<div class="swiper-container">
+		<!-- 导航栏 -->
+			<div class="nav">
+				<div class="outbox"><!-- 在外部套一个div来定位 -->
+					<div class="left">
+						<img src="images/nav-logo.png" alt="" id="logo">
+					</div>
+					<div class="middle">
+						<ul>
+							<li>优先认购</li>
+							<li>我要投资</li>
+							<li>我要转让</li>
+							<li>我要供票</li>
+							<li>我的云桥</li>
+							<li>帮助中心</li>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="images/user.png" alt="" id="userpic">
+						<p class="enter_register"><a href='item3_enter.html'>登录</a>/<a href='item3_register.html'>注册</a></p>
+					</div>
+				</div>
+			</div>
+		<!-- 轮播的部分 -->	
+		<div class="swiper-wrapper">
+			<!-- 第一页 -->
+			<div class="swiper-slide">
+				<video src="video/banner.mp4" class="bgpic video" autoplay loop></video>
+				<!-- 启动页面时视频自动播放，且循环。 -->
+			</div>
+			<!-- 第二页 -->
+			<div class="swiper-slide">
+				<img src="images/quxian.png" alt="" class="ani quxian" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+				<img src="images/table.png" alt="" class="ani table" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+				<img src="images/2.jpg" alt="" class="bgpic secondbg">	
+			</div>
+			<!-- 第三页 -->
+			<div class="swiper-slide">
+				<img src="images/3.jpg" alt="" class="bgpic thirdbg">
+			</div>
+			<!-- 第四页 -->
+			<div class="swiper-slide">
+				<img src="images/4.jpg" alt="" class="bgpic forthbg">
+			</div>
+			<!-- 第五页 -->
+			<div class="swiper-slide">
+				<img src="images/5.jpg" alt="" class="bgpic fifthbg">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<script src="js/item3_homepage.js"></script>
+</body>
+</html>
